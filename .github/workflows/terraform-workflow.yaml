@@ -55,7 +55,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -out=tfplan
+        run: terraform plan -out=tfplan -lock=false
 
 
 
@@ -88,6 +88,6 @@ jobs:
           aws-region: "us-east-1"        
 
       - name: Terraform Apply 
-        run: terraform apply -auto-approve     
+        run: terraform apply -auto-approve -lock=false
       
 
