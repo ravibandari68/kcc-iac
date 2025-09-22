@@ -11,21 +11,25 @@ This repository manages cloud infrastructure using **Terraform** with a CI/CD pi
 
 ## 📂 Repository Structure
 
+## 📁 Project Structure
+
+```text
 .
-├── modules/ # Reusable Terraform modules (e.g., EC2, VPC, ECR, etc.)
-│ ├── ec2/
-│ ├── vpc/
-│ ├── ecr/
-│ └── ...
-└── env/ # Environment-specific configurations
-    ├── non-prod/ # Non-production environment
-    │ ├── main.tf
-    │ ├── variables.tf
-    │ └── terraform.tfvars
-    └── prod/ # Production environment
-    ├── main.tf
-    ├── variables.tf
-    └── terraform.tfvars
+├── modules/  # Reusable Terraform modules (e.g., EC2, VPC, ECR, etc.)
+│   ├── ec2/
+│   ├── vpc/
+│   ├── ecr/
+│   └── ...
+└── env/     # Environment-specific configurations
+    ├── non-prod/  # Non-production environment
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── terraform.tfvars
+    └── prod/    # Production environment
+        ├── main.tf
+        ├── variables.tf
+        └── terraform.tfvars
+```
 
 - **`modules/`** → All reusable infrastructure modules.  
 - **`env/`** → Each environment (`non-prod`, `prod`) contains its own Terraform state & configuration.  
