@@ -1,6 +1,11 @@
 # Terraform Infrastructure Repository
 
-Note: Due to AWS trail Account Limitation, the application couldn't be eposed using ALB hence exposing directly using VM's IP
+### ❗Note on Current Setup
+
+> **⚠️ Due to AWS Free Tier limitations**, ALB creation is restricted.  
+> As a temporary workaround, the application is **exposed directly using the EC2 instance's public IP**.  
+> This is not recommended for production but suitable for testing/demo purposes under AWS trial accounts.
+
 
 This repository manages cloud infrastructure using **Terraform** with a CI/CD pipeline powered by **GitHub Actions**.  
 
