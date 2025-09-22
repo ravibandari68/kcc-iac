@@ -90,6 +90,7 @@ The pipeline is defined in `.github/workflows/terraform.yml`.
    - Wait for **manual approval**  
    - Apply changes once approved  
 
+
 ---
 
 ## CI/CD Flow Diagram
