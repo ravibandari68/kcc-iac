@@ -1,5 +1,7 @@
 # Terraform Infrastructure Repository
 
+Note: Due to AWS trail Account Limitation, the application couldn't be eposed using ALB hence exposing directly using VM's IP
+
 This repository manages cloud infrastructure using **Terraform** with a CI/CD pipeline powered by **GitHub Actions**.  
 
 ## 📂 Repository Structure
