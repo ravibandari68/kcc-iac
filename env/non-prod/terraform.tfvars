@@ -25,7 +25,7 @@ ec2_ingress_rules = [
     from_port       = 80
     to_port         = 80
     protocol        = "tcp"
-    cidr_blocks = ["192.168.10.12/32"] #change_me
+    cidr_blocks = ["0.0.0.0/0"] #change_me
     
   },
   {
