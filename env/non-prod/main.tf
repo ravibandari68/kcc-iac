@@ -36,14 +36,14 @@ locals {
 
 # }
 ##################### ECR #####################
-#  module "ecr" {
-#   source = "../../modules/ecr"
-#   repository_names     = var.ecr_repository_names
-#   image_tag_mutability = "MUTABLE"
-#   scan_on_push         = true
-#   tags = var.tags
+ module "ecr" {
+  source = "../../modules/ecr"
+  repository_names     = var.ecr_repository_names
+  image_tag_mutability = "MUTABLE"
+  scan_on_push         = true
+  tags = var.tags
 
-# }
+}
 
 ##################### ALB #####################
 
